@@ -1,0 +1,377 @@
+:root {
+  --main-color: #757575;
+  --header-color: #212121;
+  --accent-color: #2196f3;
+  --main-bg-color: #fff;
+  --medium-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+}
+
+body {
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  background: var(--main-bg-color);
+  line-height: 1;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.top {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--secondary-font-family);
+  font-size: 26px;
+  color: #000;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo > span {
+  color: var(--accent-color);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-menu-item {
+  margin-right: 50px;
+}
+
+.nav-menu-link {
+  text-decoration: none;
+  color: var(--header-color);
+}
+
+.nav-menu-link:hover,
+.nav-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.top-contacts {
+  list-style: none;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.top-contacts-item {
+  margin-right: 50px;
+}
+
+.top-contacts-link,
+.bottom-contacts-link {
+  text-decoration: none;
+  color: var(--header-color);
+}
+.top-contacts-link:hover,
+.top-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.slogan {
+  height: 600px;
+  background-color: var(--dark-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-heading {
+  color: #fff;
+  font-weight: 900;
+  line-height: 1.36;
+  text-transform: uppercase;
+  font-size: 44px;
+  margin-bottom: 30px;
+  width: 696px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.slogan-button {
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  background-color: var(--accent-color);
+  border: 0;
+  border-radius: 4px;
+  line-height: 1.87;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slogan-button:hover {
+  transform: scale(1.05);
+}
+
+.slogan-button:active {
+  transform: scale(0.95);
+}
+
+.pluses {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+
+.pluses-heading,
+.projects-selector-heading,
+.projects-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.pluses-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pluses-item {
+  width: 270px;
+  font-size: 14px;
+  margin-bottom: 94px;
+}
+
+.pluses-item-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--header-color);
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+
+.pluses-item-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.jobs {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 94px;
+}
+
+.jobs-item {
+  transition: all 0.3s ease;
+}
+
+.jobs-item:hover {
+  transform: scale(1.05);
+}
+
+.jobs-heading,
+.team-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--header-color);
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.jobs-list,
+.team-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team {
+  background-color: var(--medium-bg-color);
+  padding-top: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  width: 1170px;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 30px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.team-item:hover {
+  transform: scale(1.05);
+}
+
+.team-item-heading {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-item-text {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: inherit;
+  text-align: center;
+}
+
+.bottom {
+  background-color: var(--dark-bg-color);
+  padding-top: 60px;
+}
+
+.bottom-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.bottom .logo {
+  margin-bottom: 20px;
+  display: block;
+  color: var(--main-bg-color);
+}
+
+.bottom-contacts {
+  padding-bottom: 60px;
+}
+
+.bottom-contacts-item {
+  margin-bottom: 9px;
+}
+
+.bottom-contacts-item .bottom-contacts-link {
+  color: var(--main-bg-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+}
+
+.bottom-contacts-item:not(:first-child) .bottom-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bottom-contacts-link:hover,
+.bottom-contacts-link:focus,
+.bottom-contacts-item:not(:first-child) .bottom-contacts-link:hover,
+.bottom-contacts-item:not(:first-child) .bottom-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.projects {
+  margin-bottom: 64px;
+}
+
+.project-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.project-selector-button {
+  height: 38px;
+  background-color: var(--medium-bg-color);
+  border: 0;
+  border-radius: 4px;
+  line-height: 1.63;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-right: 8px;
+  margin-top: 94px;
+  padding: 6px 22px;
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  transition: all 0.3s ease;
+}
+
+.project-selector-button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.projects-list {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-item {
+  margin-bottom: 30px;
+}
+
+.project-image {
+  transition: all 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-heading {
+  margin: 20px 24px 4px 24px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--header-color);
+}
+
+.project-text {
+  margin: 0 24px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.active-button {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.active {
+  color: var(--accent-color);
+}
