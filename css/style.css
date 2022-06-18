@@ -5,6 +5,7 @@
   --main-bg-color: #fff;
   --medium-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
+  --team-social-color: #afb1b8;
   --main-font-family: "Roboto", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
 }
@@ -92,6 +93,9 @@ body {
 .slogan {
   height: 600px;
   background-color: var(--dark-bg-color);
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,6 +169,13 @@ body {
   margin-bottom: 94px;
 }
 
+.pluses-icon-box {
+  background-color: var(--medium-bg-color);
+  padding: 25px 0;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
 .pluses-item-heading {
   text-transform: uppercase;
   font-weight: 700;
@@ -178,7 +189,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.jobs {
+.jobs,
+.clients {
   width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -196,7 +208,8 @@ body {
 }
 
 .jobs-heading,
-.team-heading {
+.team-heading,
+.clients-heading {
   font-size: 36px;
   font-weight: 700;
   color: var(--header-color);
@@ -205,7 +218,8 @@ body {
 }
 
 .jobs-list,
-.team-list {
+.team-list,
+.clients-list {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -374,7 +388,8 @@ body {
   margin-top: 10px;
 }
 
-.bottom-social-heading {
+.bottom-social-heading,
+.bottom-form-heading {
   text-transform: uppercase;
   font-size: 14px;
   color: var(--main-bg-color);
@@ -387,6 +402,7 @@ body {
   margin-top: 20px;
 }
 
+.team-social-item,
 .bottom-social-item {
   width: 44px;
   height: 44px;
@@ -397,17 +413,132 @@ body {
   transition: all 0.3s ease;
 }
 
+.team-social-item:hover,
 .bottom-social-item:hover {
   background-color: var(--accent-color);
-  color: var(--main-bg-color);
   transform: scale(1.1);
 }
 
-.bottom-social-icon {
+.bottom-social-link {
   color: var(--main-bg-color);
+}
+
+.team-social-icon,
+.bottom-social-icon {
   width: 20px;
   height: 20px;
   margin-top: 12px;
+}
+
+.team-social-list {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-around;
+}
+
+.team-social-item:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.team-social-link {
+  color: var(--team-social-color);
+}
+
+.team-social-item:hover .team-social-link {
+  color: var(--main-bg-color);
+}
+
+.clients {
+  padding-top: 94px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px var(--team-social-color) solid;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clients-item:hover {
+  transform: scale(1.1);
+  border: 1px var(--accent-color) solid;
+  box-shadow: 0px 2px 4px rgba(0, 0, 255, 0.25);
+}
+
+.clients-item:hover .client-icon path {
+  fill: var(--accent-color);
+}
+
+.client-icon path {
+  transition: all 0.3s ease;
+}
+
+.bottom-form-container {
+  margin-left: 94px;
+  margin-top: 12px;
+}
+
+.bottom-form {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-form-heading {
+  margin-bottom: 20px;
+}
+
+.bottom-form-input {
+  width: 342px;
+  height: 50px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+}
+
+.bottom-form-input:valid {
+  border: 1px solid rgba(0, 255, 0, 0.5);
+}
+
+.bottom-form-button {
+  height: 50px;
+  width: 200px;
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+  border: none;
+  outline: none;
+  margin-left: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.bottom-form-button:hover {
+  transform: scale(1.05);
+}
+
+.bottom-form-button:active {
+  transform: scale(0.95);
+}
+
+.bottom-form-button img {
+  margin-left: 10px;
 }
 
 .active-button {
