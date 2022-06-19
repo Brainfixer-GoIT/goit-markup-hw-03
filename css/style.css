@@ -145,7 +145,8 @@ body {
 
 .pluses-heading,
 .projects-selector-heading,
-.projects-heading {
+.projects-heading,
+.invisible {
   position: absolute;
   width: 1px;
   height: 1px;
