@@ -83,7 +83,7 @@ body {
 .top-contacts-link,
 .bottom-contacts-link {
   text-decoration: none;
-  color: var(--header-color);
+  color: var(--main-color);
 }
 .top-contacts-link:hover,
 .top-contacts-link:focus {
