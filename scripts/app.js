@@ -9,7 +9,7 @@ buttons.forEach(button => {
     e.target.classList.add("active-button");
     projects.forEach(project => {
       let type = project.querySelector(".project-text").innerText;
-      if (type == e.target.innerText || e.target.innerText == "Все") {
+      if (type.indexOf(e.target.innerText.slice(0, -1)) >= 0 || e.target.innerText == "Все") {
         project.classList.remove("invisible");
       }
       else {
