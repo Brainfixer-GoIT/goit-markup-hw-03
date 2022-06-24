@@ -52,6 +52,14 @@ body {
   color: var(--accent-color);
 }
 
+.bottom .logo:hover {
+  text-shadow: 3px 3px 3px var(--accent-color);
+}
+
+.logo:hover {
+  text-shadow: 3px 3px 3px #000;
+}
+
 .nav-menu {
   list-style: none;
   display: flex;
