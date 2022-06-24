@@ -678,5 +678,42 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal-form">
+        <button class="modal-close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="modal-heading">Оставьте свои данные, мы Вам перезвоним</h2>
+        <form action="/">
+          <div class="modal-field">
+            <label for="name" class="modal-field-label">Имя</label>
+            <input id="name" class="modal-field-input" name="name" type="text" required placeholder="Введите имя">
+            <i class="fa-solid fa-user modal-field-icon"></i>
+          </div>
+          <div class="modal-field">
+            <label for="phone" class="modal-field-label">Телефон</label>
+            <input id="phone" class="modal-field-input" name="phone" type="text" required placeholder="Введите номер телефона">
+            <i class="fa-solid fa-phone modal-field-icon"></i>
+          </div>
+          <div class="modal-field">
+            <label for="email" class="modal-field-label">Почта</label>
+            <input id="email" class="modal-field-input" name="email" type="email" pattern=".+@.+\..+" required placeholder="Введите электронный адрес">
+            <i class="fa-solid fa-envelope modal-field-icon"></i>
+          </div>
+          <div class="modal-field">
+            <label for="comment" class="modal-field-label">Комментарий</label>
+            <textarea class="modal-field-text" name="comment" id="comment" placeholder="Введите текст комментария"></textarea>
+          </div>
+          <div class="modal-field modal-agreement">
+            <input class="agreement-checkbox" type="checkbox" name="agreement" id="agreement" checked>
+            <p class="agreement-text">Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="">Условия договора</a>
+            </p>
+          </div>
+          <button class="modal-button" id="modal-button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

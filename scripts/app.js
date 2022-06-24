@@ -18,3 +18,17 @@ buttons.forEach(button => {
     })
   })
 })
+
+const modalForm = document.querySelector(".modal");
+const sloganButton = document.querySelector(".slogan-button");
+const modalCloseButton = document.querySelector(".modal-close-button");
+
+sloganButton.addEventListener("click", e => {
+  modalForm.classList.add("modal-visible");
+  document.body.style.overflow = "hidden";
+})
+
+modalCloseButton.addEventListener("click", e => {
+  modalForm.classList.remove("modal-visible");
+  document.body.style.overflow = "visible";
+})
