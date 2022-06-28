@@ -32,3 +32,26 @@ modalCloseButton.addEventListener("click", e => {
   modalForm.classList.remove("modal-visible");
   document.body.style.overflow = "visible";
 })
+
+const agreement = document.querySelector("#agreement");
+const submitButton = document.querySelector("#modal-button");
+agreement.addEventListener("click", у => {
+  if (agreement.checked) {
+    submitButton.disabled = false;
+  }
+  else {
+    submitButton.disabled = true;
+  }
+})
+
+submitButton.addEventListener("mouseenter", e => {
+  if (agreement.checked) {
+    submitButton.classList.add("modal-button-active");
+  }
+})
+
+submitButton.addEventListener("mouseleave", e => {
+  if (agreement.checked) {
+    submitButton.classList.remove("modal-button-active");
+  }
+})

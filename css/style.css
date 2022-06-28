@@ -747,13 +747,13 @@ body {
   font-size: 16px;
   letter-spacing: 0.06em;
   font-weight: 700;
-  cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 auto;
   display: block;
 }
 
 
-.modal-button:hover {
-transform: scale(1.05);
+.modal-button-active {
+  cursor: pointer;
+  transform: scale(1.05);
 }
