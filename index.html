@@ -693,7 +693,8 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
         <h2 class="modal-heading">Оставьте свои данные, мы Вам перезвоним</h2>
-        <form action="/">
+        <form action="#" method="post" netlify>
+          <input type="hidden" name="form-name" value="form 1">
           <div class="modal-field">
             <label for="name" class="modal-field-label">Имя</label>
             <input id="name" class="modal-field-input" name="name" type="text" required placeholder="Введите имя">
